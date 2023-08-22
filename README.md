@@ -1,0 +1,1 @@
+# tiendanube-app-standalone-template-node
