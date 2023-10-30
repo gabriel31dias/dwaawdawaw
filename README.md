@@ -55,7 +55,7 @@ yarn start:db
 
 ## Running the App
 
-Before proceeding with running the app, read the [README.md](https://github.com/TiendaNube/tiendanube-app-standalone-template-react/blob/b9ca502570a57121d15bae1612a48eadaf7d8aa3/README.md) in the frontend directory to understand more about the project's details and organization.
+Before proceeding with running the app, read the [README.md](https://github.com/TiendaNube/tiendanube-app-standalone-template-react/blob/main/README.md) in the frontend directory to understand more about the project's details and organization.
 
 ```bash
 yarn start:frontend
