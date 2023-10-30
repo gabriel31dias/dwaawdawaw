@@ -21,8 +21,6 @@ Explore the features, endpoints, and usage examples provided in this [link](http
 
 To successfully integrate with our apis, it is necessary to make some settings in the `.env` environment variables file, for this it is necessary to rename the `.env.example` file to `.env` in the root of the `api` folder.
 
-It is also necessary to prepare our local database for this and rename the `db.example.json` file to `db.json` in the root of the `api` folder.
-
 ```bash
 # Port where the backend will run
 PORT=8000
@@ -45,6 +43,8 @@ CLIENT_ID=
 # Your Partners Portal account email
 CLIENT_EMAIL=
 ```
+
+It is also necessary to prepare our local database for this and rename the `db.example.json` file to `db.json` in the root of the `api` folder.
 
 ## Authentication
 

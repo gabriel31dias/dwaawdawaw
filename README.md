@@ -8,15 +8,15 @@ Welcome to the Node.js and React app template repository for Nuvemshop. This rep
 
 Explore essential resources for developing Nuvemshop native apps using Node.js and React:
 
-- [Introduction to Nuvemshop App Development](https://tiendanube.github.io/devhub-apps/docs/applications/overview)
-- [Nuvemshop API Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api)
-- [Nimbus Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nimbus)
-- [Nexo Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nexo)
+- [Introduction to Nuvemshop App Development](https://dev.nuvemshop.com.br/en/docs/applications/overview)
+- [Nuvemshop API Library Documentation](https://dev.nuvemshop.com.br/en/docs/developer-tools/nuvemshop-api)
+- [Nimbus Library Documentation](https://dev.nuvemshop.com.br/en/docs/developer-tools/nimbus)
+- [Nexo Library Documentation](https://dev.nuvemshop.com.br/en/docs/developer-tools/nexo)
 
 ## Template structure
 
 The project is organized into two main directories: `api` and `frontend`.
-Inside the `api` directory, you will find your app's authentication as well as our [Nuvemshop API](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api) and integration with our product API. This integration allows for product creation, deletion, and listing.
+Inside the `api` directory, you will find your app's authentication as well as our [Nuvemshop API](https://dev.nuvemshop.com.br/en/docs/developer-tools/nuvemshop-api) and integration with our product API. This integration allows for product creation, deletion, and listing.
 Inside the `frontend` directory, you will find the visual layer of your app. In this space, integration with the API in the `api` directory occurs, allowing the visual part and backend logic to work together seamlessly.
 
 ## Clone this repository
