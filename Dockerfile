@@ -9,12 +9,12 @@ RUN corepack enable
 COPY package.json yarn.lock ./
 COPY .yarnrc.yml* ./
 
-# Install root dependencies
-RUN yarn install --immutable
-
 # Copy workspace package files
 COPY api/package.json ./api/
 COPY frontend/package.json ./frontend/
+
+# Install root dependencies
+RUN yarn install --immutable
 
 # Copy all source code
 COPY . .
