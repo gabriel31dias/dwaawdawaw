@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "start:dev": "nodemon --watch 'src/**/*.ts' --watch './.env'",
     "start:db": "json-server --port 5000 --watch db.json"
   },
