@@ -14,7 +14,7 @@ COPY api/package.json ./api/
 COPY frontend/package.json ./frontend/
 
 # Install root dependencies
-RUN yarn install --frozen-lockfile
+RUN yarn install 
 
 # Copy all source code
 COPY . .
