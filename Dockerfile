@@ -2,12 +2,28 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+# Enable corepack for yarn
+RUN corepack enable
 
-RUN npm ci --only=production
+# Copy package files
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn ./.yarn
 
+# Install root dependencies
+RUN yarn install --immutable
+
+# Copy workspace package files
+COPY api/package.json ./api/
+COPY frontend/package.json ./frontend/
+
+# Copy all source code
 COPY . .
 
-EXPOSE 3000
+# Install workspace dependencies
+RUN yarn workspaces focus api --production
 
-CMD ["npm", "start"]
+# Expose port (Render uses PORT env variable)
+EXPOSE 8000
+
+# Start the API server
+CMD ["yarn", "workspace", "api", "start"]
